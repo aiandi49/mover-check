@@ -97,14 +97,29 @@ function pickEntries(guide, messages) {
   return chosen.filter(Boolean);
 }
 
-function systemPrompt(entries, guide) {
+// Today's date in the visitor's time zone, from the server's own clock.
+// The browser only sends a time zone name; an invalid or missing one falls back to UTC.
+function todayLine(timeZone) {
+  const now = new Date();
+  const opts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' };
+  if (typeof timeZone === 'string' && timeZone.length <= 64 && /^[A-Za-z_]+(\/[A-Za-z0-9_+-]+){0,3}$/.test(timeZone)) {
+    try {
+      const local = new Intl.DateTimeFormat('en-US', { ...opts, timeZone }).format(now);
+      return `Right now it is ${local} where the person is (time zone ${timeZone}). Use this as today's date.`;
+    } catch { /* not a real time zone: fall through */ }
+  }
+  const utc = new Intl.DateTimeFormat('en-US', { ...opts, timeZone: 'UTC' }).format(now);
+  return `Right now it is ${utc}. You don't know the person's time zone, so if a deadline depends on today's date, ask what day and time it is for them.`;
+}
+
+function systemPrompt(entries, guide, timeZone) {
   const ids = guide.entries.map((e) => e.id).join(', ');
   const data = entries.map((e) => JSON.stringify({ id: e.id, title: e.title, summary: e.summary, body: e.body, details: e.details })).join('\n');
-  return `You are Mover Check, a calm, practical helper for people about to hire, or already tangled up with, a moving company. You help them read quotes and contracts, spot red flags, use their cancellation rights and get money back. Today is ${new Date().toISOString().slice(0, 10)}.
+  return `You are Mover Check, a calm, practical helper for people about to hire, or already tangled up with, a moving company. You help them read quotes and contracts, spot red flags, use their cancellation rights and get money back. ${todayLine(timeZone)}
 
 How to work:
 - Start from what the person wrote. If something important is unclear, ask ONE short, specific question at a time, never a list. The most useful questions, in order: Is the move between states or within one state? Have you signed a bill of lading, and exactly when? How much have you paid, how, and to which company? Is that company a broker or the mover itself?
-- If they may still be inside a 3-day cancellation window, say so first, with the deadline worked out from the time they signed, before anything else.
+- If they may still be inside a 3-day cancellation window, say so first, with the deadline worked out from the time they signed, before anything else. State the deadline with its weekday, date, time and time zone. If they didn't say which time zone the signing time was in, assume their own and say so.
 - When you have enough, give a specific recommendation: what to do, by when, where to send it, and what to say. Draft the exact email or phone line when it helps. Then end with a line that starts exactly "Next step:" followed by one concrete action they can take today.
 - Use web search when you need current facts, such as a company's FMCSA SAFER record, a phone number or a rule change. Name the source and give its full https address in plain text.
 - Describe what documents and public records show. Don't call a named company a scam or accuse named people of crimes; stick to what can be checked.
@@ -212,7 +227,7 @@ export default async function handler(req, res) {
     console.error('setup: guide data unavailable');
     return send(res, 500, { error: 'Mover Check is not set up yet. Please try again later.' });
   }
-  const system = systemPrompt(pickEntries(guide, messages), guide);
+  const system = systemPrompt(pickEntries(guide, messages), guide, body && body.timeZone);
 
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), UPSTREAM_DEADLINE_MS);
