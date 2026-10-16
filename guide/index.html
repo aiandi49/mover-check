@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-font-size="sm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mover Check Guide</title>
+<meta name="description" content="A plain-language guide to hiring a moving company: brokers vs. movers, red flags, the 3-day cancellation right, deposits, estimates and getting your money back.">
+<script>(function(){var d=document.documentElement;try{var t=localStorage.getItem('pref-theme'),f=localStorage.getItem('pref-font-size');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(f==='sm'||f==='md'||f==='lg'||f==='xl')d.setAttribute('data-font-size',f);}catch(e){}})();</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body>
+<a class="skip" href="#topics">Skip to the topics</a>
+
+<header class="nav">
+  <div class="nav-row">
+    <a class="brand" href="/" aria-label="Mover Check, home">
+      <span class="brand-mark" aria-hidden="true">MC</span>
+      <span class="brand-name"><strong>Mover Check</strong><span>Moving guide</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/">Checker</a>
+      <a href="/guide" aria-current="page">Guide</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="size-select" role="group" aria-label="Text size">
+        <button type="button" data-size-option="sm" aria-pressed="true">A</button>
+        <button type="button" data-size-option="md" aria-pressed="false">A</button>
+        <button type="button" data-size-option="lg" aria-pressed="false">A</button>
+        <button type="button" data-size-option="xl" aria-pressed="false">A</button>
+      </div>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        <span data-theme-label>Light</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Hire a mover without getting taken</h1>
+      <p class="lede">How to tell a mover from a broker, read the red flags before you pay, use your 3-day right to cancel, and get your deposit back when something goes wrong.</p>
+      <div class="hero-actions">
+        <a class="btn" href="/">Check your move</a>
+        <a class="btn ghost" href="#three-day-cancel">Paid a deposit?</a>
+      </div>
+      <p class="disclaimer" id="disclaimer">General information, checked against federal rules and official sources on October 15, 2026. It is not legal advice.</p>
+    </div>
+  </section>
+
+  <section class="topics" id="topics" aria-labelledby="topics-title">
+    <div class="wrap">
+      <h2 id="topics-title">Find your topic</h2>
+      <div class="filters" role="group" aria-label="Filter topics">
+        <button type="button" data-filter="all" aria-pressed="true">All topics</button>
+        <button type="button" data-filter="booking" aria-pressed="false">Before you book</button>
+        <button type="button" data-filter="signed" aria-pressed="false">After you sign</button>
+        <button type="button" data-filter="day" aria-pressed="false">Moving day</button>
+        <button type="button" data-filter="money" aria-pressed="false">Getting money back</button>
+      </div>
+      <p class="filter-count" id="filter-count" aria-live="polite"></p>
+      <ul class="topic-grid" id="topic-grid"></ul>
+    </div>
+  </section>
+
+  <div class="entries" id="entries">
+    <p class="loading" id="loading">Loading the guide…</p>
+  </div>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Not sure which of these applies to you?</h2>
+      <p>Tell Mover Check what you signed or paid. It asks one question at a time and ends with a plan built from this guide.</p>
+      <a class="btn" href="/">Check your move</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Mover Check Guide · Updated <span id="updated">October 15, 2026</span>. FMCSA moving complaints: 1-888-368-7238.</p>
+</footer>
+
+<script src="/assets/js/prefs.js" defer></script>
+<script src="/assets/js/guide.js" defer></script>
+</body>
+</html>

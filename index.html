@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-font-size="sm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mover Check</title>
+<meta name="description" content="Describe the moving quote, deposit or contract in front of you. Mover Check spots the red flags, asks one question at a time and ends with your next step.">
+<script>(function(){var d=document.documentElement;try{var t=localStorage.getItem('pref-theme'),f=localStorage.getItem('pref-font-size');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(f==='sm'||f==='md'||f==='lg'||f==='xl')d.setAttribute('data-font-size',f);}catch(e){}})();</script>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/css/engine.css">
+</head>
+<body>
+<a class="skip" href="#chat-input">Skip to the chat</a>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav-row">
+    <a class="brand" href="/" aria-label="Mover Check, home">
+      <span class="brand-mark" aria-hidden="true">MC</span>
+      <span class="brand-name"><strong>Mover Check</strong><span>Moving red-flag checker</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/" aria-current="page">Checker</a>
+      <a href="/guide">Guide</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="size-select" role="group" aria-label="Text size">
+        <button type="button" data-size-option="sm" aria-pressed="true">A</button>
+        <button type="button" data-size-option="md" aria-pressed="false">A</button>
+        <button type="button" data-size-option="lg" aria-pressed="false">A</button>
+        <button type="button" data-size-option="xl" aria-pressed="false">A</button>
+      </div>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+        <span data-theme-label>Dark</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <p class="chip">Free and private: nothing is kept after you close the tab</p>
+    <h1 id="hero-title">Check your mover <span class="grad">before you pay</span></h1>
+    <p class="subline">Describe the quote, deposit or contract in front of you. <br>It asks one question at a time, then tells you what to do next.</p>
+    <div class="hero-links">
+      <a class="chip-link" href="/guide">Read the full guide</a>
+      <a class="chip-link" href="/guide#three-day-cancel">Paid a deposit? The 3-day rule</a>
+    </div>
+  </section>
+
+  <section class="board" aria-label="Mover Check">
+    <article class="card chat-card" id="chat-card" aria-labelledby="chat-title">
+      <div class="chat-head">
+        <div class="chat-titles">
+          <h2 id="chat-title">Check your move</h2>
+          <p class="chat-sub">Tell it what you signed, paid or were quoted.</p>
+        </div>
+        <div class="chat-actions">
+          <button type="button" class="icon-btn" id="download-btn" aria-label="Download your moving check" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></svg>
+          </button>
+          <button type="button" class="icon-btn" id="reset-btn" aria-label="Start over">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg>
+          </button>
+          <button type="button" class="pill-btn" id="full-btn" aria-pressed="false">Full page</button>
+        </div>
+      </div>
+      <p class="count-chip" id="count-chip">No messages yet</p>
+      <div class="log" id="log" role="log" aria-live="polite" aria-label="Conversation">
+        <div class="msg bot intro">
+          <p>Hi. Tell me about your move: the quote, the deposit, or what you signed and when. I'll check for red flags and give you a plan with a next step.</p>
+        </div>
+      </div>
+      <div class="composer" id="composer">
+        <label class="visually-hidden" for="chat-input">Your message</label>
+        <textarea id="chat-input" rows="1" maxlength="4000" placeholder="What did you sign, pay or get quoted?" autocomplete="off"></textarea>
+        <div class="composer-buttons">
+          <button type="button" class="mic-btn" id="mic-btn" aria-pressed="false" aria-label="Start voice input" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+          </button>
+          <button type="button" class="send-btn" id="send-btn">Send</button>
+        </div>
+      </div>
+      <p class="voice-status" id="voice-status" hidden>Listening. Take your time; the mic turns off after 10 seconds of silence.</p>
+      <p class="voice-error" id="voice-error" role="alert" hidden></p>
+      <p class="chat-note">The chat stays in this tab and clears when you close it. Voice input may be processed by your browser's maker (Google for Chrome, Apple for Safari). This is general information, not legal advice.</p>
+    </article>
+
+    <article class="card match-card" aria-labelledby="match-title">
+      <p class="pill" id="match-title">Top match</p>
+      <div class="match-tile" id="match-tile">
+        <span class="match-kind" id="match-kind">Your best option</span>
+        <strong class="match-name" id="match-name">Waiting for your first question</strong>
+      </div>
+      <p class="fit"><span class="fit-label">Fit score</span> <span class="fit-value" id="fit-value">—</span></p>
+      <p class="why" id="match-why">Your strongest option will appear here once Mover Check has enough to recommend.</p>
+    </article>
+
+    <article class="card short-card" aria-labelledby="short-title">
+      <div class="short-head">
+        <h2 id="short-title">Shortlist</h2>
+        <div class="gauge" role="img" aria-label="Top fit score: not yet scored" id="gauge">
+          <svg viewBox="0 0 36 36" aria-hidden="true" focusable="false">
+            <circle class="gauge-track" cx="18" cy="18" r="15.5"/>
+            <circle class="gauge-fill" id="gauge-fill" cx="18" cy="18" r="15.5" pathLength="100" stroke-dasharray="0 100"/>
+          </svg>
+          <span class="gauge-num" id="gauge-num">—</span>
+        </div>
+      </div>
+      <p class="short-note" id="short-note">Options are ranked by how well they fit what you've told Mover Check.</p>
+      <ol class="short-list" id="short-list"></ol>
+    </article>
+
+    <article class="card detail-card" aria-labelledby="detail-title">
+      <h2 id="detail-title">Listing details</h2>
+      <dl class="fields" id="fields">
+        <div class="field-empty">Pick an option from the shortlist to see deadlines, costs and who to contact.</div>
+      </dl>
+      <a class="guide-link" id="guide-link" href="/guide" hidden>Read this in the guide</a>
+      <div class="next-step">
+        <h3>Next step</h3>
+        <p id="next-step">Your next step will appear here.</p>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Mover Check gives general information checked against federal moving rules and official sources. It isn't a lawyer. Moving across state lines? FMCSA complaints: 1-888-368-7238.</p>
+</footer>
+
+<script src="/assets/js/prefs.js" defer></script>
+<script src="/assets/js/engine.js" defer></script>
+</body>
+</html>

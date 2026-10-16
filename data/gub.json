@@ -1,0 +1,311 @@
+{
+  "title": "Mover Check Guide",
+  "updated": "2026-10-15",
+  "disclaimer": "General information, checked against federal rules and official sources on October 15, 2026. It is not legal advice. Rules, prices and phone numbers change, so confirm them before you act.",
+  "entries": [
+    {
+      "id": "real-case",
+      "title": "A real case: $2,069.92 back, inside the window",
+      "summary": "A woman paid half of a $4,156.46 interstate move on a Saturday afternoon. Her brother read the fine print on Sunday. She cancelled in writing inside 72 hours and got every dollar back.",
+      "tags": ["real case", "after signing", "broker", "deposit", "refund"],
+      "body": [
+        "She booked an 835-mile move by phone and signed five documents online in about half an hour: an estimate, a payment authorization, a contingency agreement, a compliance form and the bill of lading. Her card was charged $2,069.92 the same afternoon.",
+        "The company she paid was a broker, not a mover. Its own estimate said it would not transport, pack or handle her goods. A separate mover in another state was named on the bill of lading.",
+        "The paperwork used four company names: the brand she booked, a different legal name on the federal record, the actual mover, and one more name that appeared only in the mover's fine print.",
+        "The broker kept a $2,188.61 \"binding estimate fee\", more than the $2,147.20 charge to haul her things. Its payment form called the money a broker fee, non-refundable 72 hours after the bill of lading was signed.",
+        "The estimate said deposits were fully refundable only if she cancelled in writing, by email to one specific address, within 3 days of signing the bill of lading. Another clause let the company keep a deposit if a customer cancelled out loud.",
+        "Over the next day, four different people from the company called to ask why she wanted out. Each call used up time on the clock.",
+        "She sent one email inside the window, quoting the company's own cancellation clause and the federal rule, and answered every call with the same line: please reply to my email in writing. The full $2,069.92 came back."
+      ],
+      "details": {
+        "Amount at stake": "$2,069.92",
+        "Window": "3 days after signing the bill of lading",
+        "What worked": "One written cancellation, sent early",
+        "Rule": "49 CFR 375.505(h)"
+      }
+    },
+    {
+      "id": "mover-or-broker",
+      "title": "Mover or broker? Find out before you pay",
+      "summary": "A broker sells and books your move but owns no trucks. A mover, the motor carrier, actually loads and drives. Many people pay a broker without knowing it.",
+      "tags": ["before booking", "broker", "mover", "fmcsa", "safer"],
+      "body": [
+        "Federal rules require household goods brokers to say plainly, in their ads and on their website, that they are brokers, that they will not transport your goods themselves, and that an authorized mover will do it under its own published rates (49 CFR 371.107).",
+        "Look up every company named in your paperwork on FMCSA's SAFER Company Snapshot by its USDOT number. The Entity Type line says Broker or Carrier, and the operating authority should include household goods.",
+        "Compare names. The brand on the website, the legal name on SAFER and the company on the bill of lading can all be different. Your contract for the actual move, the bill of lading, is with the mover, not the broker.",
+        "Ask directly, and get the answer by email: \"Are you the company that will load and drive my things? If not, which company is, and what is its USDOT number?\"",
+        "- Broker: arranges the move, usually takes the deposit, and often isn't responsible for damage or delays.",
+        "- Mover: signs the bill of lading with you, loads, drives and delivers, and handles damage claims."
+      ],
+      "details": {
+        "Look up": "https://safer.fmcsa.dot.gov",
+        "Rule": "49 CFR 371.107",
+        "Source": "https://ecfr.io/Title-49/Section-371.107"
+      }
+    },
+    {
+      "id": "safety-record",
+      "title": "Read the mover's safety record",
+      "summary": "SAFER shows each mover's safety rating and how often its trucks and drivers are taken off the road. Two minutes of checking can rule a company out.",
+      "tags": ["before booking", "safer", "fmcsa", "mover", "safety"],
+      "body": [
+        "Open the SAFER Company Snapshot for the mover on your bill of lading, not just the company you called.",
+        "Safety rating: Satisfactory is what you want. Conditional means FMCSA found problems with how the company manages safety. Unsatisfactory is a stop sign. Many small movers are unrated, which is not a red flag on its own.",
+        "Out-of-service rates: SAFER lists how often the company's vehicles and drivers were ordered off the road during inspections, next to the national average. In October 2026 the national driver average was 6.67%. A rate several times higher is a warning sign.",
+        "Check that the operating authority includes household goods. A company authorized only for general freight should not be moving your furniture across state lines."
+      ],
+      "details": {
+        "Look up": "https://safer.fmcsa.dot.gov",
+        "National driver out-of-service average": "6.67% (as listed on SAFER, October 2026)"
+      }
+    },
+    {
+      "id": "red-flags",
+      "title": "Red flags before you book",
+      "summary": "FMCSA's own list, plus the warning signs that show up in the paperwork itself.",
+      "tags": ["before booking", "red flags", "fmcsa", "deposit"],
+      "body": [
+        "FMCSA's Protect Your Move brochure lists these warning signs:",
+        "- No on-site inspection: the estimate comes by phone or online, sight unseen.",
+        "- A demand for cash or a large deposit before the move.",
+        "- You never receive the booklet Your Rights and Responsibilities When You Move.",
+        "- The website has no local address and no registration or insurance information.",
+        "- They say all your goods are covered by their insurance.",
+        "- Calls are answered with a generic \"Movers\" instead of a company name.",
+        "- Offices and warehouses are run down or don't exist.",
+        "- A rental truck shows up on moving day instead of a company truck.",
+        "Warning signs in the paperwork:",
+        "- Documents that name a different company than the one you dealt with.",
+        "- Deposit terms that don't match from one page to the next.",
+        "- Payment at delivery in cash or money order only.",
+        "- Pressure to sign everything the same day, before you've read it.",
+        "- A large fee with a vague name, such as a \"binding estimate fee\" or \"dispatch\" charge."
+      ],
+      "details": {
+        "Source": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/docs/Protect_Your_Move_Brochure.pdf"
+      }
+    },
+    {
+      "id": "survey-waiver",
+      "title": "The survey waiver: why the price can jump at pickup",
+      "summary": "A broker's written estimate is supposed to come from a physical survey by the mover, unless you waive it in writing. Waiving it means the price rests entirely on your own list.",
+      "tags": ["before booking", "estimate", "survey", "broker"],
+      "body": [
+        "Under 49 CFR 371.113, a broker's estimate must be in writing and based on a physical survey of your goods done by the mover it's booking, under a signed agreement between them.",
+        "You can waive that survey by signing a written waiver before your goods are loaded. Many online bookings include the waiver in the estimate itself, so you may have signed it without noticing.",
+        "Without a survey, any difference between your list and what's actually in your home gives the mover a reason to write a new, higher estimate on moving day.",
+        "Protect yourself: ask for a video survey, list every item room by room, and take photos. If a new estimate appears at pickup, don't let them load until you have read it."
+      ],
+      "details": {
+        "Rule": "49 CFR 371.113",
+        "Source": "https://ecfr.io/Title-49/Section-371.113"
+      }
+    },
+    {
+      "id": "deposits",
+      "title": "Deposits and broker fees: what you're actually paying for",
+      "summary": "Find out who keeps the deposit, what it's called in your paperwork, and exactly when it stops being refundable.",
+      "tags": ["before booking", "deposit", "broker", "refund"],
+      "body": [
+        "Federal rules require brokers to publish their cancellation, deposit and refund policy on their website and in their agreements with you, and to keep records of every cancellation and refund (49 CFR 371.117).",
+        "That means the refund terms are whatever the broker wrote. Find the clause before you pay and read it for three things: the deadline, how you must cancel, and where you must send it.",
+        "Read what the money is called. A deposit that the payment form describes as the broker's own fee may never reach the mover at all.",
+        "FMCSA lists a demand for a large deposit as a warning sign. Pay by credit card, never cash, wire or a payment app, so you keep your card's dispute rights."
+      ],
+      "details": {
+        "Rule": "49 CFR 371.117",
+        "Pay with": "A credit card",
+        "Source": "https://ecfr.io/Title-49/Section-371.117"
+      }
+    },
+    {
+      "id": "three-day-cancel",
+      "title": "The 3-day right to cancel",
+      "summary": "Federal rules say you must be able to cancel the bill of lading without penalty for 3 days after you sign it. Use it early, and use it in writing.",
+      "tags": ["after signing", "cancel", "refund", "bill of lading", "deadline"],
+      "body": [
+        "49 CFR 375.505(h): the bill of lading must be given to you, signed and dated at least 3 days before your goods are scheduled to be loaded, and you must be allowed to rescind it without any penalty for 3 days after you sign.",
+        "The rule doesn't say whether those are business days or calendar days. Count conservatively: 72 hours from the time stamp on your signed bill of lading.",
+        "The federal rule doesn't require writing, but your contract probably does. Many contracts name one email address for cancellations and say a phone call doesn't count. Follow the contract's method exactly.",
+        "Send it as early as you can. Calls asking why you want to cancel use up the clock; answer each one by asking them to reply to your email in writing."
+      ],
+      "details": {
+        "Deadline": "3 days after you sign the bill of lading",
+        "Rule": "49 CFR 375.505(h)",
+        "Source": "https://www.law.cornell.edu/cfr/text/49/375.505"
+      }
+    },
+    {
+      "id": "cancel-in-writing",
+      "title": "How to cancel so it sticks",
+      "summary": "One email to the exact address in your contract, one line for every phone call, and proof that you sent it.",
+      "tags": ["after signing", "cancel", "refund", "script"],
+      "body": [
+        "Send the email to the cancellation address named in your contract. Copy customer service and your salesperson.",
+        "Include your job or order number, the date you signed the bill of lading, the amount charged and your card's last four digits. Quote the contract's own cancellation clause, and name the federal rule, 49 CFR 375.505(h).",
+        "Ask for written confirmation that the move is cancelled and the full amount refunded, and say clearly that no carrier should be dispatched.",
+        "Save proof: a screenshot or PDF of the sent email showing the date and time.",
+        "When they call, stay polite and use one line: \"Please reply to my email in writing.\" Don't explain, negotiate or agree to anything by phone.",
+        "If there's no written confirmation within two business days, send a follow-up email saying you'll dispute the charge with your card issuer and file a complaint with FMCSA."
+      ],
+      "details": {
+        "Phone line": "Please reply to my email in writing.",
+        "Keep": "A screenshot of the sent email"
+      }
+    },
+    {
+      "id": "contingency",
+      "title": "What a moving \"contingency\" really covers",
+      "summary": "A contingency agreement sounds like a safety net, but it only covers the exact situation written in it, and it may never promise a refund.",
+      "tags": ["after signing", "contingency", "refund", "contract"],
+      "body": [
+        "Read three things: what event triggers it, when it ends, and what you actually get. A promise to extend your cancellation policy is not the same as a promise to refund your deposit.",
+        "Many contingencies cover only an employer-directed job relocation. If you're changing jobs on your own, the company can argue it doesn't apply.",
+        "A salesperson saying \"you have plenty of time\" on the phone doesn't change the written terms. Ask them to confirm by email, in one sentence, that you'll get a full refund of a stated amount if you cancel before a stated date.",
+        "If the contingency is unclear and you're still inside the 3-day window, cancelling now and rebooking later is usually the safer choice."
+      ],
+      "details": {
+        "Get in writing": "Full refund, exact amount, exact date",
+        "Safer option": "Cancel inside the 3-day window"
+      }
+    },
+    {
+      "id": "binding-estimates",
+      "title": "Binding vs. non-binding estimates and the 110% rule",
+      "summary": "On a binding estimate you pay the estimate. On a non-binding estimate, the mover can't demand more than 110% at delivery. Either way, they must release your goods when you pay that amount.",
+      "tags": ["moving day", "estimate", "binding", "110 percent", "delivery"],
+      "body": [
+        "Binding estimate: the price for the listed items and services is fixed. If you add items on moving day, the mover can write a new binding estimate, which you should read and sign before anything is loaded.",
+        "Non-binding estimate: the final price follows the actual weight or volume, but at delivery the mover can't demand more than 110% of the estimate, plus services you added after signing. Anything above that is billed later.",
+        "Release of your goods: once you offer the binding amount, or up to 110% of a non-binding estimate, the mover must release your shipment. Refusing counts as failing to transport with reasonable dispatch (49 CFR 375.407).",
+        "Read the exact payment method required at delivery. If it's cash or money order only, plan for it, or ask for card payment in writing before you sign."
+      ],
+      "details": {
+        "Binding, at delivery": "100% of the estimate plus added services",
+        "Non-binding, at delivery": "Up to 110% of the estimate",
+        "Rules": "49 CFR 375.403, 375.405, 375.407",
+        "Source": "https://www.law.cornell.edu/cfr/text/49/375.407"
+      }
+    },
+    {
+      "id": "weighing",
+      "title": "Your right to watch the weighing",
+      "summary": "If you're charged by weight, you can watch every weighing and demand a reweigh before unloading starts.",
+      "tags": ["moving day", "weight", "estimate", "overcharge"],
+      "body": [
+        "You have the right to observe all weighings of your shipment, and the mover must tell you where and when each one will happen (49 CFR 375.513).",
+        "If you don't watch, you're presumed to have waived that right. Waiving a reweigh has to be in writing (49 CFR 375.515).",
+        "After you're told the billing weight and total charges, you can demand a reweigh before unloading begins, and the bill must then be based on the reweigh (49 CFR 375.517).",
+        "Ask for the weight tickets. A ticket is required for each weighing, and copies must come with any bill based on weight (49 CFR 375.519)."
+      ],
+      "details": {
+        "Rules": "49 CFR 375.513 to 375.519",
+        "Ask for": "Every weight ticket"
+      }
+    },
+    {
+      "id": "valuation",
+      "title": "Valuation: what the mover owes you if something breaks",
+      "summary": "There are two levels of protection. The cheap one pays 60 cents per pound per item, so a 10-pound item worth $1,000 gets $6.",
+      "tags": ["moving day", "valuation", "damage", "claims"],
+      "body": [
+        "Full (Replacement) Value Protection: the mover must repair the item, replace it, or pay what it costs to replace it. It costs extra, and the price depends on the deductible you choose.",
+        "Released value, 60 cents per pound per article: included at no extra cost, but it pays very little. Bill of lading forms commonly give this example: a $1,000 audio component weighing 10 pounds settles for $6.",
+        "Bill of lading forms typically say your estimate must include Full Value Protection, and that you only drop to 60 cents per pound if you initial and sign a written waiver. Read that section carefully, and don't leave it blank.",
+        "This is not insurance. Note damage on the inventory at delivery, and file claims in writing within 9 months."
+      ],
+      "details": {
+        "Cheap option": "60 cents per pound per article",
+        "Claim deadline": "9 months after delivery",
+        "Booklet": "https://www.fmcsa.dot.gov/protect-your-move"
+      }
+    },
+    {
+      "id": "hostage-goods",
+      "title": "If a mover holds your belongings",
+      "summary": "Once you offer the amount the law allows at delivery, the mover must release your goods. Act fast and in writing.",
+      "tags": ["moving day", "hostage", "delivery", "complaint", "fmcsa"],
+      "body": [
+        "On a binding estimate, offering the estimated amount plus any services you added entitles you to delivery. On a non-binding estimate, offering up to 110% does.",
+        "Send the mover a written demand that cites your estimate and offers payment in the agreed form. Keep proof.",
+        "File a complaint with FMCSA's National Consumer Complaint Database online or at 1-888-368-7238. For suspected moving fraud, the DOT Office of Inspector General's hotline is 1-800-424-9071.",
+        "Contact your state attorney general, and local police if the mover won't say where your goods are.",
+        "Don't sign anything that changes the price after your goods are loaded."
+      ],
+      "details": {
+        "FMCSA complaints": "1-888-368-7238",
+        "DOT Inspector General hotline": "1-800-424-9071",
+        "Online": "https://nccdb.fmcsa.dot.gov/nccdb/home.aspx",
+        "Source": "https://www.fmcsa.dot.gov/consumer-protection/protect-your-move/how-do-i-file-complaint-against-moving-company"
+      }
+    },
+    {
+      "id": "car-shipping",
+      "title": "Shipping a car: what's a fair price",
+      "summary": "For a standard sedan on an open carrier, 2026 prices for 500 to 1,500 miles have generally run about $700 to $1,500.",
+      "tags": ["before booking", "car", "auto transport", "price"],
+      "body": [
+        "FreightWaves' 2026 pricing for an operable sedan on an open carrier puts 500 to 1,500 mile trips at about $700 to $1,500, or roughly $0.65 to $1.20 per mile. Prices change week to week, so treat that as a range, not a quote.",
+        "Get at least three quotes, including one straight from a carrier rather than a broker, and compare what's included: door-to-door service, insurance and the pickup window.",
+        "Look up the auto transporter's USDOT number on SAFER, and don't pay a large deposit up front.",
+        "Driving the car yourself, or towing it behind a rental truck, usually costs far less."
+      ],
+      "details": {
+        "Typical, 500 to 1,500 miles": "About $700 to $1,500 (open carrier)",
+        "Quotes": "At least three",
+        "Source": "https://www.freightwaves.com/checkpoint/cost-to-ship-car/"
+      }
+    },
+    {
+      "id": "card-dispute",
+      "title": "Disputing the charge with your card",
+      "summary": "If a valid refund doesn't come, your credit card issuer is the fastest backstop. The clock is 60 days from the statement.",
+      "tags": ["money back", "chargeback", "refund", "deadline"],
+      "body": [
+        "Under the Fair Credit Billing Act, your dispute letter has to reach the card issuer within 60 days of the first statement that shows the charge.",
+        "A charge for a service that was cancelled or never delivered counts as a billing error you can dispute.",
+        "The issuer must acknowledge your letter within 30 days and resolve the dispute within 90 days.",
+        "Attach your cancellation email, the time stamp proving it was inside the window, and the contract clause that promises the refund."
+      ],
+      "details": {
+        "Deadline": "60 days from the first statement showing the charge",
+        "Issuer acknowledges": "Within 30 days",
+        "Issuer resolves": "Within 90 days",
+        "Source": "https://www.bankrate.com/credit-cards/advice/how-long-before-credit-card-issuer-resolves-billing-error/"
+      }
+    },
+    {
+      "id": "complaints",
+      "title": "Where to complain",
+      "summary": "Complaints create a record for the next person, and sometimes they get your money back.",
+      "tags": ["money back", "complaint", "fmcsa", "attorney general"],
+      "body": [
+        "FMCSA National Consumer Complaint Database: online, or call 1-888-368-7238. It covers interstate movers and brokers.",
+        "DOT Office of Inspector General fraud hotline: 1-800-424-9071, for suspected household goods fraud.",
+        "The attorney general of your state and of the company's state.",
+        "The Better Business Bureau where the company is based.",
+        "Keep it factual: dates, amounts, what the contract says, and what happened. Short, specific complaints get read."
+      ],
+      "details": {
+        "FMCSA": "1-888-368-7238",
+        "Online": "https://nccdb.fmcsa.dot.gov/nccdb/home.aspx",
+        "DOT Inspector General": "1-800-424-9071"
+      }
+    },
+    {
+      "id": "local-moves",
+      "title": "Moving within one state",
+      "summary": "The federal rules in this guide cover moves that cross state lines. Moves inside one state follow that state's rules.",
+      "tags": ["before booking", "local", "state"],
+      "body": [
+        "FMCSA's household goods rules, including the 3-day cancellation right, apply to interstate moves.",
+        "For a move within one state, check which state agency licenses movers. It's often the state department of transportation or public utility commission, and the attorney general handles consumer complaints.",
+        "The same habits protect you either way: a written estimate based on a real survey, payment by credit card, cancellation in writing, and a quick check of the company's record."
+      ],
+      "details": {
+        "Interstate rules": "FMCSA, 49 CFR parts 371 and 375",
+        "In-state moves": "Your state's mover regulator"
+      }
+    }
+  ]
+}
